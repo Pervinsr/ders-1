@@ -1,0 +1,14 @@
+import random
+dizi1=["Zeytin","Peynir","Kalem","Futbol topu","Elma","Armut","Kivi"]
+dizi2=["ekşidir","ile oynanır","yazı yazar","lezzetlidir","sütten yapılır","ağaçta yetişir"]
+cumlesay=0
+
+for a in range(5):
+  x=random.randint(0,6)
+  y=random.randint(0,5)
+  print("\n",dizi1[x],dizi2[y])
+  c=input("Anlamlı mı? (e/h) girin: ")
+  if c=="e":
+    cumlesay=cumlesay+1
+print("\nProgram sona erdi.")
+print("Anlamlı cümle sayısı: ",cumlesay)
